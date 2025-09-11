@@ -7,12 +7,12 @@ devices:
     platform: CSR1kv
     credentials:
       default:
-        username: admin
-        password: C1sco12345
+        username: shvjtchndr249
+        password: o5xK_3YpWO3Pu5z_
     connections:
       cli:
         protocol: ssh
-        ip: devnetsandboxiosxe.cisco.com
+        ip: devnetsandboxiosxec9k.cisco.com
         port: 22
         arguments:
           connection_timeout: 360
