@@ -8,17 +8,10 @@ services:
     image: ollama/ollama:latest
     build: 
       context: ./
-      dockerfile: ./ollama/Dockerfile     
+      dockerfile: ./ollama/Dockerfile
     networks:
       - ollama
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [ gpu ]
-    volumes:
+          volumes:
       - ./data/ollama:/root/.ollama
     ports:
       - 11434:11434
